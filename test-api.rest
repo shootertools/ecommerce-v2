@@ -1,0 +1,30 @@
+### Obtener todos los productos
+GET http://localhost:3000/api/products
+
+### Crear producto
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Zapatillas Deportivas",
+  "description": "Perfectas para correr",
+  "price": 249.99,
+  "imageUrl": "https://example.com/zapatillas.jpg"
+}
+
+### Obtener producto por ID
+GET http://localhost:3000/api/products/1
+
+### Actualizar producto
+PUT http://localhost:3000/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Zapatillas Premium",
+  "description": "Edición 2025 mejorada",
+  "price": 279.99,
+  "imageUrl": "https://example.com/zapatillas-pro.jpg"
+}
+
+### Eliminar producto
+DELETE http://localhost:3000/api/products/1
